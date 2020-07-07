@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pedra, papel e tesoura</title>
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <h1 class="game__title">
+                Pedra, papel e tesoura
+            </h1>
+            <p class="game__round" id="round">Rodada 1</p>
+            <div class="game__container">
+                <div class="player__container">
+                    <p><span  class="game__score">Você</span> 
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </p>
+                    <div class="images">
+                        <img src="img/papel.png"   alt="paper">
+                        <img src="img/pedra.png" alt="rock">
+                        <img src="img/tesoura.png" alt="scizzors">
+                    </div>
+                </div>
+                <div class="computer__container">
+                    <p><span  class="game__score">Coputador</span> 
+                        <span class="star">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                        </span>
+                    </p>
+                    <div class="images">
+                        <img src="" alt="" class="computer-img">
+                    </div>
+                </div>
+            </div>
+            <p id="message"></p>  
+               
+        </div>
+
+    </main>
+     
+    <!-- modal -->
+    <div class="modal__container">
+        <div class="modal">
+            <p>Você ganhou!!</p>
+            <p class="score__container"><span class="score-player">2</span>:<span class="score-computer">1</span>  </p>
+            <a href="#" class="btn replay">Jogar novamente</a>
+        </div>
+    </div>
+    
+    <script src="js/index.js" defer></script>
+</body>
+</html>
