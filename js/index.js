@@ -31,16 +31,16 @@ function winnerRound (computerSelection,playerSelection) {
   if((playerSelection == 'rock' && computerSelection == 'scizzors')
        || (playerSelection == 'scizzors' && computerSelection == 'paper') ||   
          (playerSelection == 'paper' && computerSelection == 'rock'))  {
-          message.textContent = 'You Won!'
+          message.textContent = 'Você ganhou!'
         scoreKeeper.playerScore++;
         
     } else if ((playerSelection == 'scizzors' && computerSelection == 'rock')
       || (playerSelection == 'paper' && computerSelection == 'scizzors') ||   
         (playerSelection == 'rock' && computerSelection == 'paper'))  {
-          message.textContent = 'You Lost!'
+          message.textContent = 'Computador ganhou!'
           scoreKeeper.computerScore++;
     } else {
-          message.textContent = 'It\'s a draw!'
+          message.textContent = 'Empate!'
     }
     scoreUpdate(scoreKeeper)
 }
@@ -60,13 +60,13 @@ function winnerRound (computerSelection,playerSelection) {
  }
  function winnerGame() {
   if(incrementerPlayerScore == 5){
-    winnerMessage.textContent = "GAME IS OVER! YOU WON!";
+    winnerMessage.textContent = "VOCÊ GANHOU";
     modalContainer.style.display = 'block';
     scorePlayer.textContent = incrementerPlayerScore;
     scoreComputer.textContent = incrementerComputerScore;
     return
   } else if (incrementerComputerScore == 5){
-    winnerMessage.textContent = "GAME IS OVER! COMPUTER WON!";
+    winnerMessage.textContent = "COMPUTADOR GANHOU";
     modalContainer.style.display = 'block';
     scorePlayer.textContent = incrementerPlayerScore;
     scoreComputer.textContent = incrementerComputerScore;
